@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.jlojic.phonegapfacebookdemo"
+        versionCode = "100" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Phonegap Facebook Demo</name>
+
+    <description>
+        Phonegap Facebook Demo
+    </description>
+
+    <author href="http://www.jlojic.com" email="jlojic.apps@gmail.com">
+        JLOJIC
+    </author>
+
+    <preference name="phonegap-version" value="2.9.0" /> 
+    <preference name="orienation" value="default" />
+    <preference name="exit-on-suspend" value="true" />
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <access origin="*"/>
+
+    <gap:plugin name="com.phonegap.plugins.facebookconnect">
+       <param name="APP_ID" value="142334752555801" />
+       <param name="APP_NAME" value="Test" />
+    </gap:plugin>
+
+
+    <!-- Android -->
+    <gap:platform name="android" />
+    <preference name="android-minSdkVersion" value="8" />
+    <preference name="android-targetSdkVersion" value="18" /> 
+    
+
+
+    <!-- iPhone and iPad -->
+
+
+
+    <gap:platform name="ios"/>    
+
+
+</widget>
